@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+      
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/anim"
+        android:layout_width="350dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        app:lottie_fileName="Logo/video_cam.json"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+         android:layout_weight="0"
+      />
+  
+    
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center|bottom"
+        android:orientation="vertical" >
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/bgv"
+            android:layout_width="50dp"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_height="50dp"
+            app:lottie_fileName="Logo/load.json"
+            app:lottie_loop="true"
+            android:visibility="gone"
+            android:layout_marginBottom="30dp" 
+       />
+      
+        <Button
+    android:id="@+id/bt"
+    android:background="@android:color/black"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:text="Login"/>
+      </LinearLayout>
+  
+</LinearLayout>
